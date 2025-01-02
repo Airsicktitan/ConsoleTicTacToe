@@ -21,7 +21,7 @@ namespace ConsoleApp7
 
             Console.WriteLine($"Player One: {Shapes.X}\nPlayer Two: {Shapes.O}\n\n");
             DrawBoard(squares);
-            Console.WriteLine("Player One goes first\n");
+            Console.WriteLine("\nPlayer One goes first\n");
             player1Turn = true;
             player2Turn = false;
 
@@ -117,8 +117,13 @@ namespace ConsoleApp7
                     if (j < squares.GetLength(1) - 1)
                         Console.Write(" | ");
                 }
+
                 Console.WriteLine("");
+
+                if(i < squares.GetLength(0) - 1)
+                    Console.WriteLine("---------");
             }
+            
         }
 
         private static string PlayerMove()
