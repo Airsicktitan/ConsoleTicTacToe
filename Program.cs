@@ -38,55 +38,55 @@ namespace ConsoleApp7
                 switch (playerMove)
                 {
                     case 1:
-                        if (squares[0, 0] == "X" || squares[0, 0] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[0, 0] == Shapes.X.ToString() || squares[0, 0] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[0, 0] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 2:
-                        if (squares[0, 1] == "X" || squares[0, 1] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[0, 1] == Shapes.X.ToString() || squares[0, 1] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[0, 1] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 3:
-                        if (squares[0, 2] == "X" || squares[0, 2] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[0, 2] == Shapes.X.ToString() || squares[0, 2] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[0, 2] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 4:
-                        if (squares[1, 0] == "X" || squares[1, 0] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[1, 0] == Shapes.X.ToString() || squares[1, 0] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[1, 0] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 5:
-                        if (squares[1, 1] == "X" || squares[1, 1] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[1, 1] == Shapes.X.ToString() || squares[1, 1] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[1, 1] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 6:
-                        if (squares[1, 2] == "X" || squares[1, 2] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[1, 2] == Shapes.X.ToString() || squares[1, 2] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[1, 2] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 7:
-                        if (squares[2, 0] == "X" || squares[2, 0] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[2, 0] == Shapes.X.ToString() || squares[2, 0] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[2, 0] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 8:
-                        if (squares[2, 1] == "X" || squares[2, 1] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[2, 1] == Shapes.X.ToString() || squares[2, 1] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[2, 1] = PlayerMove();
 
                         DrawBoard(squares);
                         break;
                     case 9:
-                        if (squares[2, 2] == "X" || squares[2, 2] == "O") Console.WriteLine("Square is already taken");
+                        if (squares[2, 2] == Shapes.X.ToString() || squares[2, 2] == Shapes.O.ToString()) Console.WriteLine("Square is already taken");
                         else squares[2, 2] = PlayerMove();
 
                         DrawBoard(squares);
@@ -163,7 +163,7 @@ namespace ConsoleApp7
             {
                 if (shapes[i, 0] == shapes[i, 1] && shapes[i, 1] == shapes[i, 2])
                 {
-                    if (shapes[i, 0] == "X" || shapes[i, 0] == "O")
+                    if (shapes[i, 0] == Shapes.X.ToString() || shapes[i, 0] == Shapes.O.ToString())
                         return true;
                 }
             }
@@ -173,7 +173,7 @@ namespace ConsoleApp7
             {
                 if (shapes[0, j] == shapes[1, j] && shapes[1, j] == shapes[2, j])
                 {
-                    if (shapes[0, j] == "X" || shapes[0, j] == "O")
+                    if (shapes[0, j] == Shapes.X.ToString() || shapes[0, j] == Shapes.O.ToString())
                         return true;
                 }
             }
@@ -181,14 +181,14 @@ namespace ConsoleApp7
             // Diagonal (top-left to bottom-right)
             if (shapes[0, 0] == shapes[1, 1] && shapes[1, 1] == shapes[2, 2])
             {
-                if (shapes[0, 0] == "X" || shapes[0, 0] == "O")
+                if (shapes[0, 0] == Shapes.X.ToString() || shapes[0, 0] == Shapes.O.ToString())
                     return true;
             }
 
             // Diagonal (top-right to bottom-left)
             if (shapes[0, 2] == shapes[1, 1] && shapes[1, 1] == shapes[2, 0])
             {
-                if (shapes[0, 2] == "X" || shapes[0, 2] == "O")
+                if (shapes[0, 2] == Shapes.X.ToString() || shapes[0, 2] == Shapes.O.ToString())
                     return true;
             }
 
